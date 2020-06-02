@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Inicio | The Plaza";
+}
+
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="card card-home">
+                    <img src="~/imagenes/index1.jpg" class="card-img-top" alt="Send memes - Polo">
+                    <div class="card-body">
+                        @Html.ActionLink("VER MÁS", "CategoriaA", "Plaza", null, new { @class = "btn btn-floating btn-warning btn-lg" })
+                        <!--<a href="#" class="btn btn-floating btn-warning btn-lg">VER MÁS</a>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <div class="card card-home ml-auto">
+                    <img src="~/imagenes/index2.jpg" class="card-img-top" alt="Amo el internet pero me está consumiendo - Polo">
+                    <div class="card-body">
+                        @Html.ActionLink("VER MÁS", "CategoriaB", "Plaza", null, new { @class = "btn btn-floating btn-warning btn-lg" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <div class="card card-home">
+                    <img src="~/imagenes/index3.jpg" class="card-img-top" alt="In dog years Im dead - Gorro">
+                    <div class="card-body">
+                        @Html.ActionLink("VER MÁS", "CategoriaC", "Plaza", null, new { @class = "btn btn-floating btn-warning btn-lg" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <div class="card card-home ml-auto">
+                    <img src="~/imagenes/index4.jpg" class="card-img-top" alt="Cowardly Club - Polo">
+                    <div class="card-body">
+                        @Html.ActionLink("VER MÁS", "CategoriaD", "Plaza", null, new { @class = "btn btn-floating btn-warning btn-lg" })
+                    </div>
+                </div>
+            </div>
+
+        </div>

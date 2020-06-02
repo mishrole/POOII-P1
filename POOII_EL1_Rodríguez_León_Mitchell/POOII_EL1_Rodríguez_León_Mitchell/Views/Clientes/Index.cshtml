@@ -1,0 +1,63 @@
+﻿@model IEnumerable<POOII_EL1_Rodríguez_León_Mitchell.Models.Cliente>
+
+@{
+    ViewBag.Title = "Cliente";
+}
+
+<h2>Cliente</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.codigoCliente)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.razonSocial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fechaInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.paginaWeb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rubroNegocio)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.codigoCliente)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.razonSocial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.direccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fechaInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.paginaWeb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rubroNegocio)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Eliminar", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>
